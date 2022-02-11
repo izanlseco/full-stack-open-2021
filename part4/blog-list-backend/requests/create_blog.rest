@@ -1,0 +1,12 @@
+###POST new blog to list
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IktyYXhfS290ciIsImlkIjoiNWZlOGUwOWQ5ZjMzYjc0ZWY3NmY3ZGMwIiwiaWF0IjoxNjA5NTIwMTUxfQ.DC9YWqZRTZyogUw9iuF7MT6r1EqXGw2FhqZekEz5nwg
+
+{
+  "title": "This should work again",
+  "author": "Izan L.",
+  "url": "http://blog-list-cool/",
+  "likes": 15,
+  "userId": "5fe8e09d9f33b74ef76f7dc0"
+}
