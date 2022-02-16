@@ -1,0 +1,19 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "author": "Izan <IzanLS09@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.21.0",
+    "dotenv": "^16.0.0",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.19",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
