@@ -1,0 +1,67 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "lint": "eslint ./src/**/*.{js,jsx} App.js --no-error-on-unmatched-pattern",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*|react-router-native)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.19",
+    "@eva-design/eva": "^2.1.0",
+    "@react-native-async-storage/async-storage": "^1.13.0",
+    "@ui-kitten/components": "^4.4.1",
+    "date-fns": "^2.22.1",
+    "dotenv": "^10.0.0",
+    "expo": "^42.0.0",
+    "expo-linking": "^2.2.3",
+    "expo-status-bar": "~1.0.4",
+    "formik": "^2.2.9",
+    "graphql": "^15.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-svg": "^9.12.0",
+    "react-native-web": "^0.16.5",
+    "react-router-native": "^5.2.0",
+    "use-debounce": "^7.0.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@expo/webpack-config": "^0.12.76",
+    "@testing-library/jest-native": "^4.0.1",
+    "@testing-library/react-native": "^7.2.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-expo": "^8.3.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.11.0",
+    "jest": "^27.0.4",
+    "jest-expo": "^41.0.0",
+    "prettier": "^2.3.1"
+  },
+  "private": true
+}
