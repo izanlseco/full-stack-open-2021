@@ -1,0 +1,13 @@
+name: Healthcheck scheduler
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  healthcheck_scheduler:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: jtalk/url-health-check-action@v1.5
+        with:
+          url: https://fso-pokedex-0202.herokuapp.com/health

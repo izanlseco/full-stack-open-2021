@@ -1,0 +1,5 @@
+I work on a daily basis with different versions of Java, so I would say that the usual tools that in my team are being used for CI/CD are Sonar for making sure that the code has the minimum quality. As a Linter we create a custom configuration on IntelliJ and we let the IDE do the linting task. For testing we normally use assertJ/jUnit and mockito, and finally we do the deployments using Jenkins pipelines.
+
+Some, but not all, of the alternatives that i've seen are: Buddy, TeamCity, circleci, vsoft, cruistecontrol, integrity, gocd, IBM UrbanCode Deploy, Autorabit, buildkite, wercker, bitrise, bamboo, Strider CD, ...
+
+I would say that it depends of the needs of your team, if you are working in a project where those needs are for a specific set of taks to be run in a specific way and the cloud-based environments don't assure that those needs are satisfied, I would say that a self-hosted environment could be okay but, if your needs can be satisfied by one of the cloud environments and you don't want to hassle with having to buy the machinery needed to host your own environments, I would go with that option.
